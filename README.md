@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: none
 title: 職務履歴書
 ---
 
