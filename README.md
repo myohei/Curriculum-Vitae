@@ -3,6 +3,7 @@ pdf_options:
   format: a4
   margin: 30mm 20mm
   printBackground: true
+  stylesheet: ['https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap']
   headerTemplate: |-
     <style>
       section {
