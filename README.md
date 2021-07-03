@@ -1,34 +1,3 @@
----
-pdf_options:
-  format: a4
-  stylesheet: ['css/style.css', 'https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css']
-  body_class: markdown-body
-  css: |-
-    .page-break { page-break-after: always; }
-    .markdown-body { font-size: 11px; }
-    .markdown-body pre > code { white-space: pre-wrap; }
-  margin: 30mm 20mm
-  printBackground: true
-  headerTemplate: |-
-    <style>
-      section {
-        margin: 0 auto;
-        font-family: "Noto Sans JP";
-        font-size: 11px;
-      }
-    </style>
-    <section>
-      <span class="date"></span>
-    </section>
-  footerTemplate: |-
-    <section>
-      <div>
-        Page <span class="pageNumber"></span>
-        of <span class="totalPages"></span>
-      </div>
-    </section>
----
-
 # 職務経歴書
 
 ## 基本情報
