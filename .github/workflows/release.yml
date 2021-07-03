@@ -1,6 +1,7 @@
 name: Release
 
 on:
+  push:
   release:
     types: [published]
 
@@ -11,15 +12,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Publish PDF Document
-        uses: shrink/actions-document-publish@v1
-        id: publish-document
+      - uses: actions/setup-node@v2
         with:
-          sources: 'README.md'
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install --production
+      - run: npm run pdf
+      - uses: actions/upload-artifact@v2
+        with:
+          name: curriculum-vitae
+          path: README.pdf
+        if: github.event_name != 'release' || github.event.action != 'published'
       - if: github.event_name == 'release' && github.event.action == 'published'
         name: Attach PDF to Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: ${{ steps.publish-document.outputs.pdf }}
+          files: 'README.pdf'
