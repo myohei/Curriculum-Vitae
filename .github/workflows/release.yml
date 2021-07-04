@@ -23,7 +23,7 @@ jobs:
       - run: npm run pdf
       - uses: actions/upload-artifact@v2
         with:
-          name: 職務履歴書
+          name: Curriculum-Vitae
           path: Curriculum-Vitae.pdf
         if: github.event_name != 'release' || github.event.action != 'published'
       - if: github.event_name == 'release' && github.event.action == 'published'
