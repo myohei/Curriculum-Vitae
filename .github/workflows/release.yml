@@ -24,7 +24,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: 職務履歴書
-          path: 職務履歴書.pdf
+          path: Curriculum-Vitae.pdf
         if: github.event_name != 'release' || github.event.action != 'published'
       - if: github.event_name == 'release' && github.event.action == 'published'
         name: Attach PDF to Release
@@ -32,4 +32,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          files: '職務履歴書.pdf'
+          files: 'Curriculum-Vitae.pdf'
