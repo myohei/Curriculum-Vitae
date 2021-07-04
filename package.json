@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "textlint --fix README.md",
+    "pdf":"md-to-pdf --config-file md2pdf.config.js README.md",
     "prepare": "husky install"
   },
   "repository": {
@@ -38,5 +39,8 @@
     "textlint-rule-no-nfd": "^1.0.2",
     "textlint-rule-no-todo": "^2.0.1",
     "textlint-rule-web-plus-db": "^1.1.5"
+  },
+  "dependencies": {
+    "md-to-pdf": "^4.0.0"
   }
 }

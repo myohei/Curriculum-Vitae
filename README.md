@@ -5,7 +5,7 @@
 |key     |value                                               |
 | -------- | ---------------------------------------------------- |
 |Name    | 前田 洋平(まえだ ようへい)                           |
-|Blog    | [YoheiBlog](https://blog.yohei.tokyo/)              |
+|Blog    | [Yohei Blog](https://blog.yohei.tokyo/)              |
 |Facebook| [前田 洋平](https://www.facebook.com/yohei.maeda.11) |
 
 ## スキル
