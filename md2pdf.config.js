@@ -11,4 +11,5 @@ module.exports = {
 		printBackground: true,
 	},
 	stylesheet_encoding: 'utf-8',
+	dest: '職務履歴書.pdf',
 };
