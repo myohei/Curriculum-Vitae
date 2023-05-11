@@ -11,17 +11,17 @@ jobs:
     name: Publish Document to Release
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
           cache: 'npm'
       - name: install font
         run: |
           sudo apt-get update && sudo apt install fonts-noto-cjk
-      - run: npm install --production
+      - run: npm ci
       - run: npm run pdf
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: Curriculum-Vitae
           path: Curriculum-Vitae.pdf
