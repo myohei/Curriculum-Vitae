@@ -19,7 +19,7 @@ jobs:
       - name: install font
         run: |
           sudo apt-get update && sudo apt install fonts-noto-cjk
-      - run: npm install --production
+      - run: npm ci
       - run: npm run pdf
       - uses: actions/upload-artifact@v3
         with:
