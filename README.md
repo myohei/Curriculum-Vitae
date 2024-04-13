@@ -51,6 +51,23 @@
 
 ## 職務経歴
 
+### 2023/09~ : 株式会社LayerX
+
+職務: エンジニアリーダー
+
+#### Flutterアプリケーション開発
+
+経費精算申請を提供しているSaaSのモバイルアプリケーション開発をFlutterで行っています。
+BtoBならではの複雑なドメインやロジックの設計、開発を行っています。
+前職の経験からRiverpod, freezed, AutoRouteを追加でFlutterHooksを利用しております。
+APIはGraphQLを使用しており、Fragment Colocationで画面毎に最適なデータ取得を行いました。
+
+設計、開発、運用、テストなどモバイルアプリケーションに関わる全てを担当しました。（現時点では未リリース）
+
+開発言語: Dart
+ライブラリ: Flutter SDK, Riverpod, freezed, AutoRoute, graphql_flutter, flutter_hooks
+使用技術: GitHub, Xcode Cloud, Firebase Distribution, TestFlight
+
 ### 2021/09 - 2023/03 : ハコベル株式会社(ラクスル株式会社)
 
 職務: エンジニアリングマネージャー
